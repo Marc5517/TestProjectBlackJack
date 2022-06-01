@@ -5,6 +5,9 @@ namespace TestProjectBlackJack
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// Tests if the card's name will be as it should be.
+        /// </summary>
         [TestMethod]
         public void TestCard()
         {
@@ -18,6 +21,9 @@ namespace TestProjectBlackJack
             Assert.AreEqual("King", card.Name);
         }
 
+        /// <summary>
+        /// This here tests if the player's name is as it should be.
+        /// </summary>
         [TestMethod]
         public void TestPlayerName()
         {
@@ -31,6 +37,9 @@ namespace TestProjectBlackJack
             Assert.AreEqual("Marc", player.Name);
         }
 
+        /// <summary>
+        /// Tests if the player's total points will be as it should be.
+        /// </summary>
         [TestMethod]
         public void TestPlayerTotalPoints()
         {
@@ -44,6 +53,9 @@ namespace TestProjectBlackJack
             Assert.AreEqual(0, player.TotalPoints);
         }
 
+        /// <summary>
+        /// To test if the method receive points works as calculated.
+        /// </summary>
         [TestMethod]
         public void TestReceivePoints()
         {
@@ -58,6 +70,9 @@ namespace TestProjectBlackJack
             Assert.AreEqual(10, player.TotalPoints);
         }
 
+        /// <summary>
+        /// The same test as above, but with 2 cards with different points.
+        /// </summary>
         [TestMethod]
         public void TestReceivePoints2()
         {
